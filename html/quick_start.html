@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Quick Start &mdash; py-pure-client 1.43.1 documentation</title>
+  <title>Quick Start &mdash; py-pure-client 1.39.0 documentation</title>
       <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <!--[if lt IE 9]>
@@ -17,30 +17,11 @@
         <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="_static/doctools.js"></script>
         <script src="_static/sphinx_highlight.js"></script>
-        <script async="async" src="../../_/static/javascript/readthedocs-doc-embed.js"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="FlashArray Reference" href="fa_reference.html" />
     <link rel="prev" title="Installation" href="installation.html" /> 
-
-<!-- RTD Extra Head -->
-
-<link rel="stylesheet" href="../../_/static/css/readthedocs-doc-embed.css" type="text/css" />
-
-<script type="application/json" id="READTHEDOCS_DATA">{"ad_free": false, "api_host": "https://readthedocs.com", "builder": "sphinx", "canonical_url": null, "docroot": "/docs/", "features": {"docsearch_disabled": false}, "global_analytics_code": "UA-17997319-2", "language": "en", "page": "quick_start", "programming_language": "py", "project": "pure-storage-py-pure-client", "proxied_api_host": "/_", "source_suffix": ".rst", "subprojects": {}, "theme": "sphinx_rtd_theme", "user_analytics_code": "", "version": "stable"}</script>
-
-<!--
-Using this variable directly instead of using `JSON.parse` is deprecated.
-The READTHEDOCS_DATA global variable will be removed in the future.
--->
-<script type="text/javascript">
-READTHEDOCS_DATA = JSON.parse(document.getElementById('READTHEDOCS_DATA').innerHTML);
-</script>
-
-<script type="text/javascript" src="../../_/static/javascript/readthedocs-analytics.js" async="async"></script>
-
-<!-- end RTD <extrahead> -->
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -51,7 +32,7 @@ READTHEDOCS_DATA = JSON.parse(document.getElementById('READTHEDOCS_DATA').innerH
             <a href="index.html" class="icon icon-home"> py-pure-client
           </a>
               <div class="version">
-                stable
+                1.39
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
@@ -63,15 +44,15 @@ READTHEDOCS_DATA = JSON.parse(document.getElementById('READTHEDOCS_DATA').innerH
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="quick_start.html#">Quick Start</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="quick_start.html#authentication">Authentication</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="quick_start.html#flasharray-client">FlashArray Client</a></li>
-<li class="toctree-l3"><a class="reference internal" href="quick_start.html#flashblade-client">FlashBlade Client</a></li>
-<li class="toctree-l3"><a class="reference internal" href="quick_start.html#pure1-client">Pure1 client</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Quick Start</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#authentication">Authentication</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#flasharray-client">FlashArray Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#flashblade-client">FlashBlade Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pure1-client">Pure1 client</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="quick_start.html#client-examples">Client Examples</a></li>
-<li class="toctree-l2"><a class="reference internal" href="quick_start.html#filtering">Filtering</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#client-examples">Client Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#filtering">Filtering</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="fa_reference.html">FlashArray Reference</a></li>
@@ -96,7 +77,7 @@ READTHEDOCS_DATA = JSON.parse(document.getElementById('READTHEDOCS_DATA').innerH
       <li><a href="index.html" class="icon icon-home"></a></li>
       <li class="breadcrumb-item active">Quick Start</li>
       <li class="wy-breadcrumbs-aside">
-              <a href="https://github.com/PureStorage-OpenConnect/py-pure-client/blob/d7cb83ec86d2be37b0f3f79e6427bcd434172203/docs/quick_start.rst" class="fa fa-github"> Edit on GitHub</a>
+            <a href="_sources/quick_start.rst.txt" rel="nofollow"> View page source</a>
       </li>
   </ul>
   <hr/>
@@ -105,13 +86,13 @@ READTHEDOCS_DATA = JSON.parse(document.getElementById('READTHEDOCS_DATA').innerH
            <div itemprop="articleBody">
              
   <section id="quick-start">
-<h1>Quick Start<a class="headerlink" href="quick_start.html#quick-start" title="Permalink to this heading"></a></h1>
+<h1>Quick Start<a class="headerlink" href="#quick-start" title="Permalink to this heading"></a></h1>
 <section id="authentication">
-<h2>Authentication<a class="headerlink" href="quick_start.html#authentication" title="Permalink to this heading"></a></h2>
+<h2>Authentication<a class="headerlink" href="#authentication" title="Permalink to this heading"></a></h2>
 <p>This section documents the instantiation of valid, working Pure1, FlashArray, and FlashBlade
 clients required to subsequently call other client methods.</p>
 <section id="flasharray-client">
-<h3>FlashArray Client<a class="headerlink" href="quick_start.html#flasharray-client" title="Permalink to this heading"></a></h3>
+<h3>FlashArray Client<a class="headerlink" href="#flasharray-client" title="Permalink to this heading"></a></h3>
 <p>Start by importing the <code class="docutils literal notranslate"><span class="pre">flasharray</span></code> submodule in <code class="docutils literal notranslate"><span class="pre">pypureclient</span></code>:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">pypureclient</span> <span class="kn">import</span> <span class="n">flasharray</span>
 </pre></div>
@@ -140,7 +121,7 @@ when the ID token expires.</p>
 </div>
 </section>
 <section id="flashblade-client">
-<h3>FlashBlade Client<a class="headerlink" href="quick_start.html#flashblade-client" title="Permalink to this heading"></a></h3>
+<h3>FlashBlade Client<a class="headerlink" href="#flashblade-client" title="Permalink to this heading"></a></h3>
 <p>Start by importing the <code class="docutils literal notranslate"><span class="pre">flashblade</span></code> submodule in <code class="docutils literal notranslate"><span class="pre">pypureclient</span></code>:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">pypureclient</span> <span class="kn">import</span> <span class="n">flashblade</span>
 </pre></div>
@@ -187,7 +168,7 @@ integration by name and version, and specify it as the <code class="docutils lit
 </div>
 </section>
 <section id="pure1-client">
-<h3>Pure1 client<a class="headerlink" href="quick_start.html#pure1-client" title="Permalink to this heading"></a></h3>
+<h3>Pure1 client<a class="headerlink" href="#pure1-client" title="Permalink to this heading"></a></h3>
 <p>Start by importing the <code class="docutils literal notranslate"><span class="pre">pure1</span></code> submodule in <code class="docutils literal notranslate"><span class="pre">pypureclient</span></code>:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">pypureclient</span> <span class="kn">import</span> <span class="n">pure1</span>
 </pre></div>
@@ -215,7 +196,7 @@ when the ID token expires.</p>
 </section>
 </section>
 <section id="client-examples">
-<h2>Client Examples<a class="headerlink" href="quick_start.html#client-examples" title="Permalink to this heading"></a></h2>
+<h2>Client Examples<a class="headerlink" href="#client-examples" title="Permalink to this heading"></a></h2>
 <p>These examples assume the client has already been set up using the instructions
 in the Authentication section above.</p>
 <p>The client has functions that model the endpoints of the API you are accessing
@@ -303,7 +284,7 @@ iterating. It will exhaust the iterator and put the items in a list.</p>
 </div>
 </section>
 <section id="filtering">
-<h2>Filtering<a class="headerlink" href="quick_start.html#filtering" title="Permalink to this heading"></a></h2>
+<h2>Filtering<a class="headerlink" href="#filtering" title="Permalink to this heading"></a></h2>
 <p>Filters are defined by the public API specifications and are interpreted as a
 query parameter in an API call. Filters can also be combined with other
 parameters as well. The client allows for easier composition of filters,
@@ -409,9 +390,7 @@ clients (for example, the same <code class="docutils literal notranslate"><span 
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2023, Pure Storage, Inc..
-      <span class="commit">Revision <code>d7cb83ec</code>.
-      </span></p>
+    <p>&#169; Copyright 2019, Pure Storage, Inc..</p>
   </div>
 
   Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
@@ -424,40 +403,7 @@ clients (for example, the same <code class="docutils literal notranslate"><span 
       </div>
     </section>
   </div>
-  
-
-  <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
-    <span class="rst-current-version" data-toggle="rst-current-version">
-      <span class="fa fa-book"> Read the Docs</span>
-      v: stable
-      <span class="fa fa-caret-down"></span>
-    </span>
-    <div class="rst-other-versions">
-      <dl>
-        <dt>Versions</dt>
-        
-          <dd><a href="../latest/index.html">latest</a></dd>
-        
-          <dd><a href="index.html">stable</a></dd>
-        
-      </dl>
-      <dl>
-        <dt>Downloads</dt>
-        
-      </dl>
-      <dl>
-        
-        <dt>On Read the Docs</dt>
-          <dd>
-            <a href="https://readthedocs.com/projects/pure-storage-py-pure-client/?fromdocs=pure-storage-py-pure-client">Project Home</a>
-          </dd>
-          <dd>
-            <a href="https://readthedocs.com/builds/pure-storage-py-pure-client/?fromdocs=pure-storage-py-pure-client">Builds</a>
-          </dd>
-      </dl>
-    </div>
-  </div>
-<script>
+  <script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
